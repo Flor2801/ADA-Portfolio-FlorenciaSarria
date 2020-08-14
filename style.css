@@ -514,8 +514,9 @@ body {
 
 #burguer {
     display: block;  
-    margin-left: 85%;
     width: 5%;
+    margin-left: 85%;
+    
 }
 
   /*---------------------------- PRESENTACION -------------------------- */
