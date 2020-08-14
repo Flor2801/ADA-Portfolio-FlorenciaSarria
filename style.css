@@ -1,0 +1,890 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/*---------------------------- HEADER / BARRA DE NAVEGACION -------------------------- */
+
+.navegacion {
+    border-bottom: 0.05em grey solid;
+}
+
+.barra {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.link-nav {
+    color:black;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 1%;
+}
+
+li {
+    font-size: 1rem;
+    margin: 0px 30px 0 30px;
+}
+
+#contacto {
+    background-color:#f5b4b4;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0%;
+    font-size:1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    border-color: white;
+    padding: 1% 1.8% 1% 1.8%; 
+    }
+
+    .link-nav > #contacto {
+        color: white;
+    }
+    
+#burguer {
+    display: none;
+}
+    
+
+
+
+
+
+/*--------------------------------- PRESENTACION ---------------------------------- */
+
+.hola {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   padding-top: 30px;
+}
+
+.imagen {
+    width: 40%; 
+  
+}
+
+#ilustracion {
+    width: 100%;
+}
+
+#imagen-fondo-blanco {
+    display: none;
+}
+
+
+.nombre {
+    width: 50%;
+    margin-left: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#hola-soy {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    padding-bottom: 10px; 
+    line-height: 35px;       
+}
+
+#frontend {
+    font-size: 70px;
+    max-width: 300px;
+    font-weight: 800;
+    line-height: 4rem;
+    margin: 0px;
+    margin-bottom: 20px;
+    
+}
+
+#que-soy {
+    font-size: 1rem;
+    margin: 20px 0 0 0;
+    color: grey;
+    line-height: 25px;
+}
+
+.lo-que-hago {
+    padding-top: 10%;
+}
+
+#lo-que-hago {
+    color: white;
+    background-color:#f5b4b4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5rem;
+    border-color: white;
+    padding: 10px 18px 10px 18px;
+    text-decoration: none;
+}
+
+#lo-que-hago :hover {
+    color: black;
+}
+  
+h2 {
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+    
+
+
+/*-------------------------- SECCION MIS CONOCIMIENTOS ----------------------------- */
+
+.mis-conocimientos {
+    background-color:#D7EBFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.mis-conocimientos > p {
+    margin-top: 0px;
+}
+
+.contenedor {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 160px;
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+    border: solid 1px rgb(233, 232, 232);
+    border-radius: 2.5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+.html {
+    width: 100px;
+    height: auto;
+}
+
+.css {
+    width: 50px;
+    height: 50px;
+}
+
+.sass {
+    width: 100px;
+    height: 90px;
+}
+
+.js {
+    width: 120px;
+    height: auto;
+}
+
+.react {
+    width: 120px;
+    height: auto;
+}
+
+.git {
+    width: 120px;
+    height: auto;
+}
+
+
+.conocimientos > p {
+    margin-top: -10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenedor-iconos {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#icono {
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 35px 25px 35px;
+}
+
+.devicon-html5-plain, .devicon-css3-plain, .devicon-sass-original,
+.devicon-javascript-plain, .devicon-react-original, .devicon-git-plain {
+   font-size: 80px;
+}
+
+
+/*--- SECCION FRASE DE AUTOR-- */
+
+
+.contenedorfrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#FFBDC6;
+    padding: 30px 40px 35px 40px;
+  
+}
+
+.contenedorfrase > p {
+    text-align: center;
+    max-width: 680px;
+    font-size: 1rem;
+    color:black;
+}
+
+
+
+/*--- SECCION PROYECTOS DE PORTFOLIO-- */
+
+.mis-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-proyectos {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.proyecto {
+    width: 300px;
+    height: 300px;
+    border: 1px rgb(192, 192, 192) solid ;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.links-proyectos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    font-size: 1.1rem;    
+}
+
+.links-proyectos > p {
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+#todos {
+    color: black;
+    background-color: #D7EBFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border-radius: 50px;
+    border-color: white;
+    padding: 10px 25px 10px 25px;
+   margin-top: 10px;
+}
+
+#todos :hover {
+    color: white;
+}
+
+.proyecto > img {
+    width: 50%;
+    height: auto;
+    margin: 30px 30px 0 0;  
+}
+
+.proyecto > #portfolio {
+    width: 300px;
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 30px;   
+}
+
+#shop {
+    width: 90%;
+    height: auto;
+}
+
+#cine {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+#work {
+    width: 90%;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/*------------------------------ FOOTER ----------------------------- */
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBDC6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.barra-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+.barra-footer > li {
+    font-size: 0.9rem;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.div-icono {
+    width: 40px;
+    margin: 10px;
+}
+
+.icono {
+    width: 100%;
+    }
+
+.firma {
+    padding: 30px;
+}
+
+
+/*-------------------------------------------------------------------------- */
+/*------------------------------ MEDIA QUERIES ----------------------------- */
+/*-------------------------------------------------------------------------- */
+
+
+/*----  TABLET    ----------------------------- */
+
+@media (max-width: 800px) {
+
+    
+.hola {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    padding-bottom: 30px;
+   
+ }
+    
+.nombre {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0%;
+    margin: 0 0 0 0px;
+}
+
+
+#hola-soy {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 2px 0 0 0;
+}
+
+#frontend{
+    font-size: 55px;
+    font-weight: 800;
+    margin: 0px;
+    padding-bottom: 1%;
+    line-height: 3rem; 
+}
+
+#que-soy {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1px;
+    line-height: 1.2rem; 
+}
+
+.lo-que-hago {
+    padding-top: 2.5%;
+}
+
+#lo-que-hago {
+    color: #f5b4b4;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 7px;
+   }
+
+}
+
+
+
+
+/*----  CELULAR    ----------------------------- */
+
+@media (max-width: 600px)  {
+
+    
+/*---------------------------- HEADER / BARRA DE NAVEGACION -------------------------- */
+
+
+body {
+    background-color:#f5b4b4;
+    margin: 0%;
+    width: 100vw;
+}
+
+.barra {
+    display: none;
+}
+
+.navegacion {
+    padding-top: 25px;
+    border-bottom: 0px;
+}
+
+#burguer {
+    display: inline;  
+     margin-left: 85%;
+
+}
+
+  /*---------------------------- PRESENTACION -------------------------- */
+   
+  
+.hola {
+    background-color:#f5b4b4;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5rem; 
+    padding-left: 5px;
+}
+
+.nombre {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0%;
+    margin: 0 0 0 0px;
+}
+
+.imagen {   
+    height: 40%;
+    width: 80%;
+    display: flex;
+       }
+
+.div-ilustracion {
+    width: 100%;
+    display: flex;
+}
+
+#ilustracion {
+            display: none;
+          }
+
+#imagen-fondo-blanco {
+    display: flex;
+    height: auto;
+    width: 70%;
+    margin-top: 20px;
+    }
+        
+
+#hola-soy {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2px 0 0 0;
+}
+
+#frontend {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0px;
+    padding-bottom: 1%;
+    line-height: 2.5rem; 
+}
+
+#que-soy {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1px;
+    line-height: 1.2rem; 
+}
+
+.lo-que-hago {
+    padding-top: 2.5%;
+}
+
+#lo-que-hago {
+    color: #f5b4b4;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 7px;
+   }
+
+#lo-que-hago :hover {
+    color: black;
+}
+   
+
+h2 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+    
+h3 {
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+ 
+ 
+    
+  /*---------------------------- MIS CONOCIMIENTOS -------------------------- */
+
+
+        .mis-conocimientos {
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 25px;
+            padding-bottom: 75px;
+            padding-left: 20px;
+            
+        }
+
+        .mis-conocimientos > p {
+            max-width: 60%;
+            text-align: center;
+
+        }
+       
+
+        .contenedor {
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-top: 30px;
+        }
+        
+        .tarjeta {
+            width: 25%;
+            height: 20%;
+            margin: 2%;
+            padding: 4%;
+            background-color: white;
+            border: solid 1px rgb(233, 232, 232);
+            border-radius: 2.5% ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: baseline;        
+        }
+        
+        
+        .tarjeta > img {
+            width: 70%;
+            height: auto;
+        }
+        
+        .tarjeta > p {
+         text-align: center;
+         font-size: 75%;
+         
+
+
+        }
+        
+        .contenedor-iconos {
+            max-width: 90%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        
+        #icono {
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 35px 25px 35px;
+        }
+        
+      
+        
+/*----------------------- SECCION FRASE DE AUTOR------------------------- */
+
+
+.contenedorfrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#f5b4b4;
+    padding: 35px 40px 40px 40px;
+  
+}
+
+.contenedorfrase > p {
+    text-align: center;
+    max-width: 100%;
+    font-size: 12px;
+    color:black;
+}
+
+.contenedorfrase > .comillas {
+    width: 40px;
+    
+}
+
+
+
+
+  /*---------------------------- MIS PROYECTOS -------------------------- */
+
+  .mis-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+
+.links-proyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.links-proyectos > p {
+    color: black;
+    background-color: #D7EBFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    border-color: white;
+    padding: 10px 25px 10px 25px;
+    margin: 5px 5px 0px 0px ;
+
+}
+
+#todos {
+    background-color: #D7EBFF;
+    margin-top: 5px;   
+}
+
+#todos :hover {
+    color: white;
+}
+
+
+.contenedor-proyectos {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.proyecto {
+    width: 90%;
+    height: 50px;
+    border: 1px rgb(192, 192, 192) solid ;
+    border-radius: 8px;
+    padding: 4%;
+    margin: 1%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proyecto > p {
+    font-size: 12px;
+    max-width: 50%;
+}
+
+.proyecto > img {
+    height: 100%;
+    width: auto;
+    margin: 0px 7px 0px 0px;
+}
+
+.proyecto > #portfolio {
+    width: 40%;
+    height: auto;
+    margin: 0%;
+}
+
+
+#shop {
+    width: 90px;
+    height: auto;
+}
+
+#cine {
+    width: 90px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+#work {
+    width: 90px;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*------------------------------ FOOTER ----------------------------- */
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBDC6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.link-nav {
+    display: none;
+}
+
+.barra-footer {
+    display: none;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    max-width: 75%;
+}
+
+.icono {
+    width: 90%;
+}
+
+.firma {
+    padding: 30px 0 30px 0;
+    max-width: 75%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
