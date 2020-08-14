@@ -514,8 +514,8 @@ body {
 
 #burguer {
     display: inline;  
-     margin-left: 85%;
-
+    margin-left: 85%;
+    width: 5%;
 }
 
   /*---------------------------- PRESENTACION -------------------------- */
@@ -531,6 +531,7 @@ body {
     align-items: flex-start;
     line-height: 1.5rem; 
     padding-left: 5px;
+    padding-top: 5px;
 }
 
 .nombre {
