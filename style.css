@@ -436,7 +436,7 @@ h3 {
 /*-------------------------------------------------------------------------- */
 
 
-/*----  TABLET    ----------------------------- */
+/*  ----------------  TABLET  ----------------  */
 
 @media (max-width: 800px) {
 
@@ -501,9 +501,8 @@ h3 {
 }
 
 
+/*  ----------------  CELULAR  ----------------  */
 
-
-/*----  CELULAR    ----------------------------- */
 
 @media (max-width: 600px)  {
 
@@ -894,11 +893,406 @@ h3 {
 
 }
 
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
 
 
 
+/*  ----------------  CELULAR APAISADO ----------------  */
 
 
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    
+    /*---------------------------- HEADER / BARRA DE NAVEGACION -------------------------- */
+    
+    
+    body {
+        background-color:#f5b4b4;
+        margin: 0%;
+        width: 100vw;
+    }
+    
+    .barra {
+        display: none;
+    }
+    
+    .navegacion {
+        padding-top: 25px;
+        border-bottom: 0px;
+    }
+    
+    #burguer {
+        display: block;  
+        width: 5%;
+        margin-left: 87%;
+        
+    }
+    
+      /*---------------------------- PRESENTACION -------------------------- */
+       
+      
+    .hola {
+        background-color:#f5b4b4;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        line-height: 1.5rem; 
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    
+    .nombre {
+        height: 50%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0%;
+        margin: 0 0 0 0px;
+    }
+    
+    .imagen {   
+        height: 40%;
+        width: 80%;
+        display: flex;
+           }
+    
+    .div-ilustracion {
+        width: 100%;
+        display: flex;
+    }
+    
+    #ilustracion {
+                display: none;
+              }
+    
+    #imagen-fondo-blanco {
+        display: flex;
+        height: auto;
+        width: 70%;
+        margin-top: 20px;
+        }
+            
+    
+    #hola-soy {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 2px 0 0 0;
+    }
+    
+    #frontend {
+        font-size: 40px;
+        font-weight: 800;
+        margin: 0px;
+        padding-bottom: 1%;
+        line-height: 2.5rem; 
+    }
+    
+    #que-soy {
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        padding-bottom: 1px;
+        line-height: 1.2rem; 
+    }
+    
+    .lo-que-hago {
+        padding-top: 2.5%;
+    }
+    
+    #lo-que-hago {
+        color: #f5b4b4;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 20px;
+        padding: 7px;
+       }
+    
+    #lo-que-hago :hover {
+        color: black;
+    }
+       
+    
+    h2 {
+            font-weight: 900;
+            font-size: 20px;
+        }
+        
+    h3 {
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+     
+     
+        
+      /*---------------------------- MIS CONOCIMIENTOS -------------------------- */
+    
+    
+            .mis-conocimientos {
+                background-color:white;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-top: 25px;
+                padding-bottom: 75px;
+                padding-left: 10px;
+            }
+    
+            .mis-conocimientos > p {
+                max-width: 60%;
+                text-align: left;
+            }
+           
+    
+            .contenedor {
+                width: 90vw;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin-top: 30px;
+            }
+            
+            .tarjeta {
+                width: 25%;
+                height: 20%;
+                margin: 2%;
+                padding: 4%;
+                background-color: white;
+                border: solid 1px rgb(233, 232, 232);
+                border-radius: 2.5% ;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: baseline;        
+            }
+            
+            
+            .tarjeta > img {
+                width: 70%;
+                height: auto;
+            }
+            
+            .tarjeta > p {
+             text-align: center;
+             font-size: 75%;
+             
+    
+    
+            }
+            
+            .contenedor-iconos {
+                max-width: 90%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+            }
+            
+            #icono {
+                width: 30%;
+                margin: 15px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 25px 35px 25px 35px;
+            }
+            
+          
+            
+    /*----------------------- SECCION FRASE DE AUTOR------------------------- */
+    
+    
+    .contenedorfrase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:#f5b4b4;
+        padding: 35px 40px 40px 40px;
+      
+    }
+    
+    .contenedorfrase > p {
+        text-align: center;
+        max-width: 100%;
+        font-size: 12px;
+        color:black;
+    }
+    
+    .contenedorfrase > .comillas {
+        width: 40px;
+        
+    }
+    
+    
+    
+    
+      /*---------------------------- MIS PROYECTOS -------------------------- */
+    
+      .mis-proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        background-color: white;
+    }
+    
+    
+    .links-proyectos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 25px;
+        font-size: 0.9rem;
+    }
+    
+    .links-proyectos > p {
+        color: black;
+        background-color: #D7EBFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9rem;
+        border-radius: 50px;
+        border-color: white;
+        padding: 10px 25px 10px 25px;
+        margin: 5px 5px 0px 0px ;
+    
+    }
+    
+    #todos {
+        background-color: #D7EBFF;
+        margin-top: 5px;   
+    }
+    
+    #todos :hover {
+        color: white;
+    }
+    
+    
+    .contenedor-proyectos {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+    
+    .proyecto {
+        width: 90%;
+        height: 50px;
+        border: 1px rgb(192, 192, 192) solid ;
+        border-radius: 8px;
+        padding: 4%;
+        margin: 1%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .proyecto > p {
+        font-size: 12px;
+        max-width: 50%;
+    }
+    
+    .proyecto > img {
+        height: 100%;
+        width: auto;
+        margin: 0px 7px 0px 0px;
+    }
+    
+    .proyecto > #portfolio {
+        width: 40%;
+        height: auto;
+        margin: 0%;
+    }
+    
+    
+    #shop {
+        width: 90px;
+        height: auto;
+    }
+    
+    #cine {
+        width: 90px;
+        height: auto;
+        margin-bottom: 5px;
+        margin-left: 30px;
+    }
+    
+    #work {
+        width: 90px;
+        height: auto;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+    
+    
+    
+    
+    /*------------------------------ FOOTER ----------------------------- */
+    
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFBDC6;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .link-nav {
+        display: none;
+    }
+    
+    .barra-footer {
+        display: none;
+    }
+    
+    .redes {
+        display: flex;
+        flex-direction: row;
+        max-width: 75%;
+    }
+    
+    .icono {
+        width: 90%;
+    }
+    
+    .firma {
+        padding: 30px 0 30px 0;
+        max-width: 75%;
+    }
+    
+    
+    
+    }
+    
+    
 
 
 
