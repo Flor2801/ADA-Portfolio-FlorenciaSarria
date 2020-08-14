@@ -513,7 +513,7 @@ body {
 }
 
 #burguer {
-    display: inline;  
+    display: block;  
     margin-left: 85%;
     width: 5%;
 }
