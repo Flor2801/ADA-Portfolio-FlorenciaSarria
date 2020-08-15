@@ -51,9 +51,6 @@ li {
     
 
 
-
-
-
 /*--------------------------------- PRESENTACION ---------------------------------- */
 
 .hola {
@@ -62,13 +59,15 @@ li {
    display: flex;
    justify-content: space-around;
    align-items: center;
-
+   padding-bottom: 30px;
    padding-top: 30px;
+   
 }
 
 .imagen {
     width: 40%; 
-  
+    display: flex;
+    
 }
 
 #ilustracion {
@@ -81,12 +80,12 @@ li {
 
 
 .nombre {
-    width: 50%;
-    margin-left: 50px;
+    width: 40%;
+    margin-left: 10px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-   
+    
 }
 
 #hola-soy {
@@ -103,7 +102,7 @@ li {
     font-weight: 800;
     line-height: 4rem;
     margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     
 }
 
@@ -187,9 +186,7 @@ h3 {
     justify-content: center;
     align-items: center;
     align-content: center;
-
 }
-
 
 
 .html {
@@ -229,33 +226,8 @@ h3 {
     text-align: center;
 }
 
-.contenedor-iconos {
-    max-width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
 
-#icono {
-    width: 30%;
-    margin: 15px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px 35px 25px 35px;
-}
-
-.devicon-html5-plain, .devicon-css3-plain, .devicon-sass-original,
-.devicon-javascript-plain, .devicon-react-original, .devicon-git-plain {
-   font-size: 80px;
-}
-
-
-/*--- SECCION FRASE DE AUTOR-- */
+/*-------------------- SECCION FRASE DE AUTOR --------------------- */
 
 
 .contenedorfrase {
@@ -264,20 +236,21 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color:#FFBDC6;
-    padding: 30px 40px 35px 40px;
+    padding: 30px 20px 35px 20px;
   
 }
 
 .contenedorfrase > p {
     text-align: center;
-    max-width: 680px;
-    font-size: 1rem;
+    font-size: 15px;
     color:black;
+    max-width: 600px;
 }
 
 
 
-/*--- SECCION PROYECTOS DE PORTFOLIO-- */
+/* --------------------- SECCION PROYECTOS DE PORTFOLIO --------------------- */
+
 
 .mis-proyectos {
     display: flex;
@@ -285,31 +258,8 @@ h3 {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
-
-.contenedor-proyectos {
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-
-.proyecto {
-    width: 300px;
-    height: 300px;
-    border: 1px rgb(192, 192, 192) solid ;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 
 .links-proyectos {
     display: flex;
@@ -331,49 +281,64 @@ h3 {
     border-radius: 50px;
     border-color: white;
     padding: 10px 25px 10px 25px;
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 #todos :hover {
     color: white;
 }
 
-.proyecto > img {
-    width: 120%;
-    height: auto;
-    margin: 30px 30px 0 0;  
-}
 
-.proyecto > #portfolio {
-    width: 300px;
-    height: auto;
-    margin-left: 25px;
-    margin-bottom: 30px;   
-}
-
-#shop {
+.contenedor-proyectos {
     width: 90%;
     height: auto;
-    margin-bottom: 10px;
-    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto {
+    width: 300px;
+    height: 300px;
+    border: 1px rgb(192, 192, 192) solid ;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.proyecto > img {
+    width: 100%;
+    height: auto;      
+}
+
+#portfolio {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#juego {
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 #app {
     padding-bottom: 5px;
-    padding-left: 30px;
 }
 
 #cine {
     width: 90%;
     height: auto;
     margin-bottom: 30px;
-    margin-left: 30px;
 }
 
 #work {
     width: 80%;
     height: auto;
-    margin-left: 30px;
     margin-bottom: 30px;
 }
 
@@ -383,6 +348,7 @@ h3 {
    padding-bottom: 20px;
    margin-top: 0px;
 }
+
 
 /*------------------------------ FOOTER ----------------------------- */
 
@@ -438,7 +404,18 @@ h3 {
 
 /*  ----------------  TABLET  ----------------  */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+
+
+    
+li {
+    font-size: 12px;
+    margin: 0px 20px 0 20px;
+}
+
+#contacto {
+    font-size: 12px;
+}
 
     
 .hola {
@@ -447,11 +424,10 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
     padding-bottom: 30px;
-   
  }
     
+ 
 .nombre {
     height: 50%;
     width: 50%;
@@ -485,12 +461,12 @@ h3 {
 }
 
 .lo-que-hago {
-    padding-top: 2.5%;
+    padding-top: 20px;
 }
 
 #lo-que-hago {
-    color: #f5b4b4;
-    background-color: white;
+    color: white ;
+    background-color: #f5b4b4;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
@@ -498,13 +474,24 @@ h3 {
     padding: 7px;
    }
 
+
+
+.contenedorfrase > p {
+    max-width: 500px;
+    font-size: 12px;
+}
+
+.proyecto {
+    width: 250px;
+    height: 250px;
+}
 }
 
 
 /*  ----------------  CELULAR  ----------------  */
 
 
-@media (max-width: 600px), (orientation: landscape)  {
+@media (max-width: 650px) {
 
     
 /*---------------------------- HEADER / BARRA DE NAVEGACION -------------------------- */
@@ -512,8 +499,7 @@ h3 {
 
 body {
     background-color:#f5b4b4;
-    margin: 0%;
-    width: 100vw;
+    margin: 0px;
 }
 
 .barra {
@@ -529,7 +515,6 @@ body {
     display: block;  
     width: 5%;
     margin-left: 87%;
-    
 }
 
   /*---------------------------- PRESENTACION -------------------------- */
@@ -543,51 +528,56 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    line-height: 1.5rem; 
     padding-left: 10px;
     padding-top: 5px;
 }
 
 .nombre {
     height: 50%;
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     padding-bottom: 0%;
     margin: 0 0 0 0px;
+    
 }
 
 .imagen {   
     height: 40%;
-    width: 80%;
-    display: flex;
-       }
-
-.div-ilustracion {
     width: 100%;
     display: flex;
+    margin-top: 10%;
+    
+}
+
+.div-ilustracion {
+    width: 50px;
+    display: flex;
+    
 }
 
 #ilustracion {
-            display: none;
-          }
+    display: none;
+}
 
 #imagen-fondo-blanco {
-    display: flex;
+    display: block;
     height: auto;
-    width: 70%;
-    margin-top: 20px;
-    }
-        
+    width: 60%;
+    margin-top: 25px;
+    margin-left: 20%;
 
+}
+        
 #hola-soy {
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: 500;
     margin: 2px 0 0 0;
+    line-height: normal;
 }
 
 #frontend {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     margin: 0px;
     padding-bottom: 1%;
@@ -603,7 +593,7 @@ body {
 }
 
 .lo-que-hago {
-    padding-top: 2.5%;
+    padding-top: 10%;
 }
 
 #lo-que-hago {
@@ -614,7 +604,7 @@ body {
     font-weight: 500;
     border-radius: 20px;
     padding: 7px;
-   }
+}
 
 #lo-que-hago :hover {
     color: black;
@@ -624,12 +614,12 @@ body {
 h2 {
         font-weight: 900;
         font-size: 20px;
-    }
+}
     
 h3 {
         font-weight: 300;
         font-size: 0.8rem;
-    }
+}
  
  
     
@@ -640,21 +630,21 @@ h3 {
             background-color:white;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding-top: 25px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 35px;
             padding-bottom: 75px;
-            padding-left: 30px;
+           
         }
 
         .mis-conocimientos > p {
             max-width: 60%;
-            text-align: left;
+            text-align: center;
         }
        
-
         .contenedor {
-            width: 80vw;
+            width: 80%;
+            height: 50%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -663,10 +653,12 @@ h3 {
             align-content: center;
             margin-top: 30px;
         }
+
         
         .tarjeta {
-            width: 25%;
-            height: 20%;
+            box-sizing: border-box;
+            width: 120px;
+            height: 120px;
             margin: 2%;
             padding: 4%;
             background-color: white;
@@ -681,7 +673,7 @@ h3 {
         
         
         .tarjeta > img {
-            width: 70%;
+            width: 50px;
             height: auto;
         }
         
@@ -689,58 +681,28 @@ h3 {
          text-align: center;
          font-size: 75%;
          
-
-
         }
         
-        .contenedor-iconos {
-            max-width: 90%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin: 20px;
-        }
-        
-        #icono {
-            width: 30%;
-            margin: 15px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 25px 35px 25px 35px;
-        }
-        
-      
         
 /*----------------------- SECCION FRASE DE AUTOR------------------------- */
 
 
 .contenedorfrase {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#f5b4b4;
-    padding: 35px 40px 40px 40px;
+   padding: 35px 10px 40px 10px;
   
 }
 
 .contenedorfrase > p {
     text-align: center;
-    max-width: 100%;
-    font-size: 12px;
+    max-width: 70%;
+    font-size: 70%;
     color:black;
 }
 
+
 .contenedorfrase > .comillas {
     width: 40px;
-    
 }
-
-
 
 
   /*---------------------------- MIS PROYECTOS -------------------------- */
@@ -748,10 +710,10 @@ h3 {
   .mis-proyectos {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 25px;
-    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 80px;
     padding-left: 20px;
     background-color: white;
 }
@@ -761,9 +723,10 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding-bottom: 40px;
     font-size: 0.9rem;
 }
 
@@ -776,12 +739,15 @@ h3 {
     border-color: white;
     padding: 10px 25px 10px 25px;
     margin: 5px 5px 0px 0px ;
+    border: solid 1px gray;
+    background-color: white;
 
 }
 
 #todos {
-    background-color: #D7EBFF;
+    
     margin-top: 5px;   
+    
 }
 
 #todos :hover {
@@ -790,7 +756,7 @@ h3 {
 
 
 .contenedor-proyectos {
-    width: 80vw;
+    width: 80%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -801,53 +767,55 @@ h3 {
 
 
 .proyecto {
-    width: 90%;
-    height: 50px;
+    width: 120px;
+    height: 120px;
     border: 1px rgb(192, 192, 192) solid ;
     border-radius: 8px;
     padding: 4%;
-    margin: 1%;
+    margin: 2%;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .proyecto > p {
     font-size: 12px;
-    max-width: 50%;
+    max-width: 70%;
+    text-align: center;
 }
 
 .proyecto > img {
-    height: 100%;
+    height: 60px;
     width: auto;
-    margin: 0px 7px 0px 0px;
 }
 
-.proyecto > #portfolio {
-    width: 40%;
-    height: auto;
-    margin: 0%;
+#portfolio {
+    margin: 0px;
 }
 
+#juego {
+    margin: 0px;
+}
 
-#shop {
-    width: 90px;
+#gastos {
+    padding: 0px;
+    width: 90%;
     height: auto;
 }
 
 #cine {
-    width: 90px;
-    height: auto;
-    margin-bottom: 5px;
-    margin-left: 30px;
+    margin: 0px;
 }
 
 #work {
-    width: 90px;
+    margin: 0px;
+}
+
+#app {
+    padding: 0px;
+    width: 100%;
     height: auto;
-    margin-left: 30px;
-    margin-bottom: 5px;
 }
 
 
@@ -862,7 +830,7 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: #FFBDC6;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -887,6 +855,7 @@ h3 {
 .firma {
     padding: 30px 0 30px 0;
     max-width: 75%;
+    text-align: center;
 }
 
 
