@@ -163,7 +163,7 @@ h3 {
 }
 
 .contenedor {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,24 +242,14 @@ h3 {
 
 .contenedorfrase > p {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     color:black;
-    max-width: 600px;
+    max-width: 800px;
 }
-
 
 
 /* --------------------- SECCION PROYECTOS DE PORTFOLIO --------------------- */
 
-
-.mis-proyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
 
 .links-proyectos {
     display: flex;
@@ -277,7 +267,7 @@ h3 {
     color: black;
     background-color: #D7EBFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 20px;
     border-radius: 50px;
     border-color: white;
     padding: 10px 25px 10px 25px;
@@ -288,14 +278,29 @@ h3 {
     color: white;
 }
 
+.mis-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+.contenedor-padre {
+    display: flex;
+    justify-content: center;
+    max-width: 1118px;
+}
+
 
 .contenedor-proyectos {
-    width: 90%;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
+
 
 .proyecto {
     width: 300px;
@@ -310,44 +315,46 @@ h3 {
     align-items: center;
 }
 
-.proyecto > img {
-    width: 100%;
-    height: auto;      
+
+.py-img {
+   width: 250px;
 }
 
-#portfolio {
+
+.py-img > img {
+   width: 100%;  
+}
+
+
+#pf { 
+ width: 90%;
+ margin-left: 10px;
+ margin-bottom: 15px;
+}
+
+#gastos {
     width: 80%;
-    height: auto;
-    margin-bottom: 20px;
+    margin-left: 25px;
 }
 
 #juego {
-    margin-bottom: 20px;
-    margin-right: 20px;
+ width: 110%;
+ margin-bottom: 15px;
+ margin-right: 10px;
+ padding: 0px;
 }
 
-#app {
-    padding-bottom: 5px;
-}
 
 #cine {
-    width: 90%;
-    height: auto;
     margin-bottom: 30px;
 }
 
 #work {
-    width: 80%;
-    height: auto;
     margin-bottom: 30px;
 }
 
 
-#gastos {
-   padding-left: 30px;
-   padding-bottom: 20px;
-   margin-top: 0px;
-}
+
 
 
 /*------------------------------ FOOTER ----------------------------- */
@@ -402,10 +409,28 @@ h3 {
 /*-------------------------------------------------------------------------- */
 
 
-/*  ----------------  TABLET  ----------------  */
+/*  -----------------------------  TABLET  ---------------------------------- */
+
+@media (max-width: 930px) {
+
+.contenedor-padre {
+    justify-content: center;
+    max-width: 700px;
+}
+           
+.contenedor-proyectos {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}
+
+
+
 
 @media (max-width: 850px) {
-
 
     
 li {
@@ -417,7 +442,6 @@ li {
     font-size: 12px;
 }
 
-    
 .hola {
     width: 100%;
     height: 100%;
@@ -426,7 +450,6 @@ li {
     align-items: center;
     padding-bottom: 30px;
  }
-    
  
 .nombre {
     height: 50%;
@@ -436,7 +459,6 @@ li {
     padding-bottom: 0%;
     margin: 0 0 0 0px;
 }
-
 
 #hola-soy {
     font-size: 0.9rem;
@@ -474,27 +496,26 @@ li {
     padding: 7px;
    }
 
-
-
+.links-proyectos {
+       padding: 0px 50px 30px 50px;
+}
+   
 .contenedorfrase > p {
     max-width: 500px;
     font-size: 12px;
 }
 
-.proyecto {
-    width: 250px;
-    height: 250px;
-}
+
 }
 
 
-/*  ----------------  CELULAR  ----------------  */
+/*  -----------------------------  CELULARES  ---------------------------------- */
 
 
 @media (max-width: 650px) {
 
     
-/*---------------------------- HEADER / BARRA DE NAVEGACION -------------------------- */
+/*---------------------------- HEADER / BARRA DE NAVEGACION -------------------- */
 
 
 body {
@@ -517,7 +538,7 @@ body {
     margin-left: 87%;
 }
 
-  /*---------------------------- PRESENTACION -------------------------- */
+/*--------------------------------- PRESENTACION ------------------------------- */
    
   
 .hola {
@@ -623,10 +644,10 @@ h3 {
  
  
     
-  /*---------------------------- MIS CONOCIMIENTOS -------------------------- */
+  /*------------------------------- MIS CONOCIMIENTOS -------------------------------- */
 
 
-        .mis-conocimientos {
+.mis-conocimientos {
             background-color:white;
             display: flex;
             flex-direction: column;
@@ -637,12 +658,12 @@ h3 {
            
         }
 
-        .mis-conocimientos > p {
+.mis-conocimientos > p {
             max-width: 60%;
             text-align: center;
         }
        
-        .contenedor {
+.contenedor {
             width: 80%;
             height: 50%;
             display: flex;
@@ -655,7 +676,7 @@ h3 {
         }
 
         
-        .tarjeta {
+.tarjeta {
             box-sizing: border-box;
             width: 120px;
             height: 120px;
@@ -669,22 +690,21 @@ h3 {
             justify-content: center;
             align-items: center;
             align-content: baseline;        
-        }
+    }
         
         
-        .tarjeta > img {
+.tarjeta > img {
             width: 50px;
             height: auto;
-        }
+    }
         
-        .tarjeta > p {
+.tarjeta > p {
          text-align: center;
          font-size: 75%;
-         
         }
         
         
-/*----------------------- SECCION FRASE DE AUTOR------------------------- */
+/*---------------------------- SECCION FRASE DE AUTOR ----------------------------- */
 
 
 .contenedorfrase {
@@ -699,13 +719,12 @@ h3 {
     color:black;
 }
 
-
 .contenedorfrase > .comillas {
     width: 40px;
 }
 
 
-  /*---------------------------- MIS PROYECTOS -------------------------- */
+  /*---------------------------------- MIS PROYECTOS ------------------------------- */
 
   .mis-proyectos {
     display: flex;
@@ -717,7 +736,6 @@ h3 {
     padding-left: 20px;
     background-color: white;
 }
-
 
 .links-proyectos {
     display: flex;
@@ -745,9 +763,7 @@ h3 {
 }
 
 #todos {
-    
-    margin-top: 5px;   
-    
+    margin-top: 5px;      
 }
 
 #todos :hover {
@@ -760,19 +776,19 @@ h3 {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 0px;
 }
 
 
 .proyecto {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border: 1px rgb(192, 192, 192) solid ;
     border-radius: 8px;
     padding: 4%;
-    margin: 2%;
+    margin: 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -780,16 +796,17 @@ h3 {
 }
 
 .proyecto > p {
-    font-size: 12px;
+    font-size: 15px;
     max-width: 70%;
     text-align: center;
 }
 
-.proyecto > img {
-    height: 60px;
+.imagen {
+    height: 50%;
     width: auto;
 }
 
+/*
 #portfolio {
     margin: 0px;
 }
@@ -859,10 +876,6 @@ h3 {
 }
 
 
-
 }
 
----------------------------------------------------------
----------------------------------------------------------
----------------------------------------------------------
 
