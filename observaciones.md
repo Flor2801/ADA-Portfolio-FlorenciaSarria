@@ -42,8 +42,6 @@ El unico cambio es que ya no esta el padding top, pero, atencion! El padding top
 
 Usas muchisimas veces width: 100% y height: 100%, una orden que no deberia ser necesaria (ni lo es en tu codigo) salvo en elementos especificos como imagenes. Los elementos en bloque ya tienen de por si un width de 100%. Tambien agregas muchas cosas innecesarias como "flex-direction: row" (que se pone por defecto). Abundan tanto en tu CSS que no pude marcarlas a todas. Proba bien si una orden de css es necesaria luego de escribirla: no es bueno tener CSS innecesario ya que complica mucho el mantenimiento del codigo. 
 
-- Tus nombres de clases no son descriptivos. "hab-p" o "ana" o "foot" por ejemplo. "descripcion-habilidades", "texto-principal" y "links-footer" son mejores. Lo que vos escribis es demasiado breve, tengo que pensar para entender a que se refiere, y no me sirve de nada saber la etiqueta. En general, queremos que nuestro HTML pueda leerse y entenderse aun sin ver la pagina - que el nombre de la clase nos diga qué es el elemento al que está asociado en un sentido funcional: que hace el elemento en tu pagina, no que es. No es bueno depender del contenido para los nombres de clases (ni colores, o formas), sino describir funcionalidades.
-
 
 Sé que puedo ser un poco quisquillosa en las correcciones. No es la intención que sientas que hiciste un mal trabajo, porque no es así: tu trabajo es fantástico. Mi tarea es comentarte todo lo que vea para que sea más fantástico aún. 
 
