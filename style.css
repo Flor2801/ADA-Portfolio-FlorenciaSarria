@@ -367,7 +367,7 @@ margin-bottom: 30px;
 /*------------------------------------ MEDIA QUERIES ---------------------------------- */
 /*------------------------------------------------------------------------------------- */
 
-
+/* OJO!! Esta media query nunca se cierra!! */
 @media (max-width: 1000px) {
     
 .contenedor-padre {
@@ -387,6 +387,9 @@ margin-bottom: 30px;
     width: 200px;
     height: 200px;
 }
+}
+
+/* aqui deberia cerrar la media query anterior */
 
 
 @media (max-width: 850px) {
@@ -773,3 +776,4 @@ h3 {
     max-width: 370px;
     } 
 }
+

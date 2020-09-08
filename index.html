@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mi Portfolio - Florencia Sarria </title>
     <link rel="stylesheet" href="style.css">
+    <!-- No veo que estes usando devicon, por lo que no corresponde importarlo -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <!-- ojo, el nombre debe ser favicon.ico (no favicon.ico.ico) y debe estar en la carpeta raiz -->
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico.ico">
 </head>
 
@@ -43,6 +45,14 @@
             <div class="hola" id="hola">
 
                 <div class="nombre">
+               <!-- No se recomienda usar <br> prácticamente nunca. En este caso en particular, 
+                estamos usando <br> para estilar el contenido, violando la regla de separación 
+                de responsabilidades entre CSS y HTML. 
+                CSS debe ser el único encargado de estilar nuestra web. 
+                En este caso, por ejemplo, podríamos poner cada línea dentro de un <span> y decirle en el 
+                CSS a .frase: display: flex; flex-direction: column;. O simplemente dos <p>. 
+                De esta manera nos aseguramos de que el HTML sólo de estructura, y el CSS el estilado -->
+      
                     <p id="hola-soy">¡Hola! <br> Soy Florencia Sarria </p>
                     <p id="frontend">FrontEnd <br> Developer Jr </p>
                     <p id="que-soy"> Desarrolladora web,  amante de lo simple,  fan de Buenos Aires, el café y el StandUp </p>
@@ -76,6 +86,8 @@
             <p>Te cuento qué tecnologías uso para trabajar</p>
 
             <div class="contenedor">
+                <!-- No es necesario darle a cada una de las img una clase diferente! 
+                Mucho menos cuando no las usas en css -->
                 <div class="tarjeta">
                     <div class="icono"><img class="html"
                         src="https://cdn.discordapp.com/attachments/731181604092772423/736378120684306462/6.png">
@@ -122,7 +134,7 @@
     <aside>
         <div class="contenedorfrase">
             <img class="comillas" src="https://img.icons8.com/wired/64/000000/quote-left.png" />
-
+<!-- Cuidado aqui con el uso de etiquetas de html para estilar. eso lo hacemos siempre con CSS.  -->
             <p>""Tu trabajo va a ser gran parte de tu vida, y la única manera de estar completamente satisfecho es hacer
                 un gran trabajo.<br> <strong>La única manera de hacer un gran trabajo es amar lo que haces. </strong>
                 <br> Si todavía no lo encontraste, sigue buscando. No te resignes. Como todos los asuntos del corazón, sabrás cuando lo hayas
